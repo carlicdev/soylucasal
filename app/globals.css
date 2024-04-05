@@ -2,32 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: var(--font-poppins);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.light {
+  background-color: #f3f4f6;
+  color: #0f172a;
+}
+
+.dark {
+  background-color:  #111112;
+  color: #d2d6dd;
+}
+
+.dark .card {
+  background-color: #000000;
+}
+
+.light .card {
+  background-color: white;
+}
+
+.tag::after {
+  content: '';
+  position: absolute;
+  top: 100%; /* Pegado al lado de abajo de la etiqueta */
+  right: 3px; /* Pegado al lado derecho de la tarjeta */
+  transform: translateY(-50%) rotate(-45deg); /* Rotar 45 grados para formar un triángulo */
+  width: 12px; /* Ancho del triángulo */
+  height: 12px; /* Altura del triángulo */
+  border-left: 6px solid transparent; /* Borde izquierdo transparente */
+  border-right: 6px solid transparent; /* Borde derecho transparente */
+  border-bottom: 6px solid #172554; /* Borde inferior para formar el triángulo */
+}
+
+.animated-box {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+  z-index: 100;
+}
+
+.open {
+  height: 300px;
+}
+
+.closed {
+  height:0;
 }
