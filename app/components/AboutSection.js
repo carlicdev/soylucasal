@@ -24,9 +24,9 @@ const AboutSection = () => {
             <div className='w-full lg:w-2/3'>
                 <p className='text-3xl font-black'>Hola, soy Luca!</p>
                 <p className='text-lg font-black'>Soy escritor, programador y emprendedor.</p>
-                <p className='text-lg my-5'>I’m the guy they come to when they feel the lack of authenticity in their messaging, vision, and lifestyle. No fancy sales funnels and pushy marketing in this household</p>
-                <p className='text-lg my-5'>I help them systemize their workflow, marketing, and content so they can work for 2 hours a day, charge more, and sell their products & services without manual effort.</p>
-                <p className='text-lg my-5'>As a freelancer turned consultant turned creator, I’ve developed effective systems with time, skin in the game, and experience with 20,000+ students and clients.</p>
+                <p className='text-lg my-5'>Quiero ayudarte a solucionar problemas. Ser hombre no es fácil, nunca lo ha sido. Si queremos mejorar nuestra salud, aumentar nuestra riqueza, y vivir mejores vidas, tenemos que ser estratégicos.</p>
+                <p className='text-lg my-5'>Todos tenemos nuestras guerras que pelear. Yo he peleado las mías y he diseñado sistemas que me han ayudado a solucionar los problemas que se me han presentado y a vivir una vida más plena, satisfactoria y con un sentido de propósito.</p>
+                <p className='text-lg my-5'>Mi lema es Más Salud. Más Riqueza. Más Satisfacción. Eso es lo que quiero para mi vida y para la tuya.</p>
                 <p className='text-lg font-black'>Permiteme ayudarte a encontrar tu propósito y a diseñar las estratégias para cumplir con tu misión.</p>
             </div>
         </div>

@@ -11,7 +11,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='w-full card py-2 fixed top-0 z-20'>
+    <div className='w-full card py-2 fixed top-0 z-20 shadow'>
         <div className='max-w-7xl w-full mx-auto flex px-2 lg:px-0'>
             <div className='flex gap-4 items-center ml-0 mr-auto'>
                 <Link href='/'>
