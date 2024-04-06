@@ -20,7 +20,7 @@ const poppins = Poppins({
  })
 
 export const metadata = {
-  title: "soylucasal",
+  title: "Luca Sal",
   description: "Plataforma de Autor",
 };
 
