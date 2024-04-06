@@ -1,3 +1,5 @@
+
+import { Analytics } from '@vercel/analytics/react';
 import { Poppins, Inter, Euphoria_Script } from "next/font/google";
 import "./globals.css";
 import ThemeContextProvider from "./context/ThemeContext";
@@ -31,6 +33,7 @@ export default function RootLayout({ children }) {
         <ThemeContextProvider>
           <Navbar/>
             {children}
+          <Analytics />
           <ScrollUp />
           <Footer />
         </ThemeContextProvider>

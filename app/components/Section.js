@@ -17,7 +17,7 @@ const  Section = async () => {
             <div className='flex justify-center my-10'>
             <Link href={'/blog'}>
                 <div className='px-7 py-5 bg-blue-800 rounded-lg text-2xl text-white'>
-                    Más Artículos de Nuestro Blog
+                    Más Artículos de Mi Blog
                 </div>
             </Link>     
             </div>
