@@ -95,7 +95,9 @@ const Contact = () => {
           <div className='mb-0 mt-auto flex gap-10 mx-auto'>
             <div>
               <span className='text-blue-800 text-7xl'>
-                <BsTwitter />
+                <a href='https://twitter.com/LucaSalLuca'>
+                    <BsTwitter />
+                </a>
               </span>
             </div>
             <div>
