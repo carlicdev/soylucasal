@@ -34,7 +34,7 @@ export const getBooks = async () => {
 export const getPosts = async () => {
     const query = gql`
     query MyQuery {
-      postsConnection(last: 20) {
+      postsConnection(last: 50) {
         edges {
           node {
             author {
@@ -115,7 +115,7 @@ export const getCategories  = async () => {
             categories {
                 name
                 slug
-                posts {
+                posts (last:50) {
                   id
                 }
             }
@@ -251,7 +251,7 @@ export const getAdjacentPosts = async (createdAt, slug) => {
 export const getCategoryPost = async (slug) => {
   const query = gql`
     query GetCategoryPost($slug: String!) {
-      postsConnection(where: {categories_some: {slug: $slug}}) {
+      postsConnection(where: {categories_some: {slug: $slug}}, last: 50) {
         edges {
           cursor
           node {
