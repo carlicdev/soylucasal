@@ -1,11 +1,12 @@
 "use client"
 
+import { redirect } from 'next/navigation'
 import { useState } from 'react'
 
 const Subscribe = () => {
     const [email, setEmail] = useState('')
     const [error, setError] = useState(null)
-    const [success, setSuccess] = useState(null)
+    const [success, setSuccess] = useState(false)
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -23,12 +24,18 @@ const Subscribe = () => {
 
             if (data.status === 200) { 
               setEmail('')
+              setSuccess(true)
             }
         } catch (err) {
             console.log('error:', err)
         }
         
     }
+
+    if (success) {
+        redirect('/confirmation')
+    }
+    
   return (
     <div>
         <form onSubmit={handleSubmit}>
@@ -43,15 +50,13 @@ const Subscribe = () => {
             <button 
                 type='submit'
                 className='rounded-lg shadow-md shadow-slate- hover:bg-orange-700 w-full py-5 mt-4 mb-2 text-white bg-red-700 mx-auto text-2xl'>
-                Suscribirme
+                {!success ? 'Suscribirme' : 'Te Has Unido a Las Cartas de Luca'}
             </button>
         </form>
         {error && (
             <p className='text-red-500'>{error} </p>
         )}
-        {success && (
-            <p className='text-green-500'>{success} </p>
-        )}
+
     </div>
   )
 }

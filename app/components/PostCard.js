@@ -16,7 +16,7 @@ const PostCard = ({post, index}) => {
         }
         <div className="p-3 flex flex-col justify-center">
             <div className='w-full flex gap-2 items-center justify-start'>
-                <div className='w-10 h-10 rounded-full bg-black flex items-center justify-center'>
+                <div className='w-10 h-10 rounded-full card flex items-center justify-center'>
                     <Image src={'/man.png'} alt='profileImg' width={40} height={40} className="rounded-full"/>
                 </div>
                 <div className="flex flex-col">
