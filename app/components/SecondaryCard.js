@@ -5,7 +5,7 @@ const SecondaryCard = ({course}) => {
 
   return (
     <div className='card rounded-lg flex flex-col justify-center relative'>
-        <div className='tag text-center absolute top-7 right-[-10px] bg-blue-800 w-[95px] px-2 py-1 shadow-md'>
+        <div className='tag text-center absolute top-7 right-[-10px] bg-red-600 w-[95px] px-2 py-1 shadow-md'>
            <span className='text-xl text-white mx-auto font-bold text-lg text-special' >Curso</span>
         </div>
         <div className="p-3 flex flex-wrap">

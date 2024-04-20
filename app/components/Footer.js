@@ -46,7 +46,7 @@ const Footer = async () => {
                     <div className='flex flex-col gap-2'>
                     {categories.map((category) => (
                         <Link key={category.slug} href={`/categoria/${category.slug}`}>
-                            <span className='text-lg cursor-pointer block hover:text-blue-800'>
+                            <span className='text-lg cursor-pointer block hover:text-red-600'>
                                 {category.name} ({category.posts.length})
                             </span>
                         </Link>

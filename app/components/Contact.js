@@ -84,24 +84,24 @@ const Contact = () => {
         <div className='lg:order-2 w-full lg:w-1/2 flex flex-col items-center gap-10 '>
           <Logo />
             <div className='flex flex-col justify-center items-center gap-10'>
-                <p className='font-black text-5xl text-center'>Tengamos una <span className='text-blue-800'>conversación</span>.</p>
+                <p className='font-black text-5xl text-center'>Tengamos una <span className='text-yellow-500'>conversación</span>.</p>
                 <div className='felx flex-col  mx-auto'>
                     <div className='px-2 py-4 flex gap-2 items-center'>
-                    <span className='text-blue-800 text-xl'><IoMdMail/></span>
+                    <span className='text-yellow-500 text-xl'><IoMdMail/></span>
                     <p className='text-xl'>lucasal.contacto@gmail.com</p>
                     </div>
                 </div>
             </div>
           <div className='mb-0 mt-auto flex gap-10 mx-auto'>
             <div>
-              <span className='text-blue-800 text-7xl'>
+              <span className='text-yellow-500 hover:text-yellow-600 text-7xl'>
                 <a href='https://twitter.com/LucaSalLuca'>
                     <BsTwitter />
                 </a>
               </span>
             </div>
             <div>
-              <span className='text-blue-800 text-7xl'>
+              <span className='text-yellow-500 hover:text-yellow-600 text-7xl'>
                 <BsYoutube />
               </span>
             </div>
@@ -116,31 +116,31 @@ const Contact = () => {
           <div className='flex flex-wrap gap-2 justify-start'>
             <div 
                 onClick={() => setSubject((prev) => prev === 'Dudas Y Aclaraciones' ? '' :'Dudas Y Aclaraciones')}
-                className={`${subject === 'Dudas Y Aclaraciones' ? 'bg-blue-800 text-white' : 'text-blue-800'} px-4 py-3 rounded-lg border-2 border-blue-800 hover:bg-blue-800 hover:text-white  cursor-pointer`}
+                className={`${subject === 'Dudas Y Aclaraciones' ? 'bg-yellow-500 text-white' : 'text-yellow-500'} px-4 py-3 rounded-lg border-2 border-yellow-500 hover:bg-yellow-500 hover:text-white  cursor-pointer`}
             >
               Dudas y Aclaraciones
             </div>
             <div 
                 onClick={() => setSubject((prev) => prev === 'Colaboraciones' ? '' :'Colaboraciones')}
-                className={`${subject === 'Colaboraciones' ? 'bg-blue-800 text-white' : 'text-blue-800'} px-4 py-3 rounded-lg border-2 border-blue-800 hover:bg-blue-800 hover:text-white  cursor-pointer`}
+                className={`${subject === 'Colaboraciones' ? 'bg-yellow-500 text-white' : 'text-yellow-500'} px-4 py-3 rounded-lg border-2 border-yellow-500 hover:bg-yellow-500 hover:text-white  cursor-pointer`}
             >
               Colaboraciones
             </div>
             <div 
                 onClick={() => setSubject((prev) => prev === 'Asesorías' ? '' :'Asesorías')}
-                className={`${subject === 'Asesorías' ? 'bg-blue-800 text-white' : 'text-blue-800'} px-4 py-3 rounded-lg border-2 border-blue-800 hover:bg-blue-800 hover:text-white  cursor-pointer`}
+                className={`${subject === 'Asesorías' ? 'bg-yellow-500 text-white' : 'text-yellow-500'} px-4 py-3 rounded-lg border-2 border-yellow-500 hover:bg-yellow-500 hover:text-white  cursor-pointer`}
             >
             Asesorías
             </div>
             <div 
                 onClick={() => setSubject((prev) => prev === 'Problemas con la Página' ? '' :'Problemas con la Página')}
-                className={`${subject === 'Problemas con la Página' ? 'bg-blue-800 text-white' : 'text-blue-800'} px-4 py-3 rounded-lg border-2 border-blue-800 hover:bg-blue-800 hover:text-white  cursor-pointer`}
+                className={`${subject === 'Problemas con la Página' ? 'bg-yellow-500 text-white' : 'text-yellow-500'} px-4 py-3 rounded-lg border-2 border-yellow-500 hover:bg-yellow-500 hover:text-white  cursor-pointer`}
             >
               Problemas con la Página
             </div>
             <div 
                 onClick={() => setSubject( (prev) => prev === 'Conversación Casual' ? '' : 'Conversación Casual')}
-                className={`${subject === 'Conversación Casual' ? 'bg-blue-800 text-white' : 'text-blue-800'} px-4 py-3 rounded-lg border-2 border-blue-800 hover:bg-blue-800 hover:text-white  cursor-pointer`}
+                className={`${subject === 'Conversación Casual' ? 'bg-yellow-500 text-white' : 'text-yellow-500'} px-4 py-3 rounded-lg border-2 border-yellow-500 hover:bg-yellow-500 hover:text-white  cursor-pointer`}
             >
               Conversación Casual
             </div>
@@ -154,7 +154,7 @@ const Contact = () => {
                 name='name'
                 value={form.name}
                 onChange={handleChange}
-                className='bg-white py-3 px-2 text-xl text-black rounded-lg outline-none border focus:outline-blue-800'
+                className='bg-white py-3 px-2 text-xl text-black rounded-lg outline-none border focus:outline-yellow-500'
               />
             </label>
             <label className='flex flex-col w-full mb-5'>
@@ -164,7 +164,7 @@ const Contact = () => {
                 name='email'
                 value={form.email}
                 onChange={handleChange}
-                className='bg-white py-3 px-2 text-xl text-black rounded-lg outline-none border focus:outline-blue-800'
+                className='bg-white py-3 px-2 text-xl text-black rounded-lg outline-none border focus:outline-yellow-500'
               />
               <span className='mt-1'>{errorMessage}</span>
             </label>
@@ -175,12 +175,12 @@ const Contact = () => {
                 value={form.message}
                 onChange={handleChange}          
                 rows={3} 
-                className='bg-white py-3 px-2 text-xl text-black rounded-lg outline-none border focus:outline-blue-800'
+                className='bg-white py-3 px-2 text-xl text-black rounded-lg outline-none border focus:outline-yellow-500'
               />
             </label>
             <div>
               <button 
-              className='flex gap-4  hover:bg-blue-700 items-center px-7 py-5 rounded-lg bg-blue-800 text-white text-2xl shadow'
+              className='flex gap-4  hover:bg-yellow-600 hover:scale-105 items-center px-7 py-5 rounded-lg bg-yellow-500 text-black text-2xl shadow'
               type='submit'
               disabled={!isValid}
               >

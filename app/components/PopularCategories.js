@@ -12,7 +12,7 @@ const PopularCategories = async () => {
           {
             categories && categories.map((tag, index) => (
               <Link href={`/categoria/${tag.slug}`} key={index}>
-                <p className='px-1.5 bg-blue-800 text-white rounded-full' >{tag.name}</p>
+                <p className='px-1.5 bg-yellow-500 text-black font-light rounded-full' >{tag.name}</p>
               </Link>
             ))
           }

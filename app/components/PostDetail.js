@@ -51,7 +51,7 @@ const PostDetail = ({post}) => {
           case 'paragraph':
             return <p key={index} className="my-4 text-justify tracking-wide text-lg">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</p>;
           case 'heading-four':
-            return <h4 key={index} className="text-2xl font-black text-special mb-4 mt-5">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
+            return <h4 key={index} className="text-2xl font-black text-special mb-4 mt-10">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
           case 'image':
             return (
               <img
@@ -93,7 +93,7 @@ const PostDetail = ({post}) => {
                 {
                     post.categories.map((category, index) => (
                       <Link href={`/categoria/${category.slug}`} key={index} >
-                        <div className='bg-blue-800 text-gray-100 px-2 py-1 rounded-full'>
+                        <div className='bg-yellow-500 text-black font-light px-2 py-1 rounded-full'>
                             <p className={`text-sm text-${category.color}`}>#{category.name}</p>
                         </div>
                       </Link>

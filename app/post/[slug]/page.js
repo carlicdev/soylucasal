@@ -28,12 +28,9 @@ const PostPage = async ({params}) => {
             <div className='col-span-10 lg:col-span-3'>
                 <div className='lg:sticky relative top-14 flex flex-col gap-4'>
                     <Sidebar />
+                    <Subscribe />
                     <AuthorSideCard />
                     <SimilarPosts slug={post.slug} categories={post.categories.map((category) => category.slug)} />
-                    <div className='card p-3 rounded-lg'>
-                        <p className='text-2xl mb-2'>Suscríbete a nuestro Boletín Informativo.</p>
-                        <Subscribe />
-                    </div>
                     {/**<LastComments /> /** */}
                     {
                         categories && <PostCountByCategory categories={categories}/>

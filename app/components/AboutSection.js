@@ -10,12 +10,14 @@ const AboutSection = () => {
                 <Image src={'/man.png'} width={300} height={300} />
                 <div className='flex gap-5 mt-5'>
                     <div>
-                        <span className='text-blue-800 text-4xl'>
+                        <span className='text-yellow-500 hover:text-yellow-600 text-4xl'>
+                        <a href='https://twitter.com/LucaSalLuca'>
                             <BsTwitter />
+                        </a>
                         </span>
                     </div>
                     <div>
-                        <span className='text-blue-800 text-4xl'>
+                        <span className='text-yellow-500 hover:text-yellow-600 text-4xl'>
                             <BsYoutube />
                         </span>
                     </div>
@@ -23,11 +25,11 @@ const AboutSection = () => {
             </div>
             <div className='w-full lg:w-2/3'>
                 <p className='text-3xl font-black'>Hola, soy Luca!</p>
-                <p className='text-lg font-black'>Soy escritor, programador y emprendedor.</p>
+                <p className='text-lg font-black text-yellow-500'>Soy escritor, programador y emprendedor.</p>
                 <p className='text-lg my-5'>Quiero ayudarte a solucionar problemas. Ser hombre no es fácil, nunca lo ha sido. Si queremos mejorar nuestra salud, aumentar nuestra riqueza, y vivir mejores vidas, tenemos que ser estratégicos.</p>
                 <p className='text-lg my-5'>Todos tenemos nuestras guerras que pelear. Yo he peleado las mías y he diseñado sistemas que me han ayudado a solucionar los problemas que se me han presentado y a vivir una vida más plena, satisfactoria y con un sentido de propósito.</p>
-                <p className='text-lg my-5'>Mi lema es Más Salud. Más Riqueza. Más Satisfacción. Eso es lo que quiero para mi vida y para la tuya.</p>
-                <p className='text-lg font-black'>Permiteme ayudarte a encontrar tu propósito y a diseñar las estratégias para cumplir con tu misión.</p>
+                <p className='text-lg my-5'>Mi lema es Más <span className='text-yellow-500 font-bold'>Salud</span>. Más <span className='text-yellow-500 font-bold'>Riqueza</span>. Más <span className='text-yellow-500 font-bold'>Satisfacción</span>. Eso es lo que quiero para mi vida y para la tuya.</p>
+                <p className='text-lg font-black text-yellow-500'>Permiteme ayudarte a encontrar tu propósito y a diseñar las estratégias para cumplir con tu misión.</p>
             </div>
         </div>
     </div>

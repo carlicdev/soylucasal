@@ -26,12 +26,12 @@ const PostCard = ({post, index}) => {
             </div>
             <div className="flex flex-col p-5">
                 <Link href={`/post/${post.slug}`}>
-                    <p className='text-2xl text-special font-bold tracking-wide mb-3 cursor-pointer hover:text-blue-800'>{post.title}</p>
+                    <p className='text-2xl text-special font-bold tracking-wide mb-3 cursor-pointer hover:text-red-600'>{post.title}</p>
                 </Link>
                 <div className="flex gap-3 flex-wrap">
                     {
                         post.categories.map((tag, index) => (
-                            <p className='px-1.5 bg-blue-800 text-gray-100 rounded-full' key={index}>#{tag.name}</p>
+                            <p className='px-1.5 bg-yellow-500 text-black font-light rounded-full' key={index}>#{tag.name}</p>
                         ))
                     }
                 </div>

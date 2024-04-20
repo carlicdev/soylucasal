@@ -7,7 +7,7 @@ const PostCountByCategory = ({categories}) => {
         <p className='text-2xl text-special tracking-wide font-bold mb-2 text-center'>Categorías</p>
             {categories.map((category) => (
                 <Link key={category.slug} href={`/categoria/${category.slug}`}>
-                    <span className='cursor-pointer block pb-3 mb-1 text-light text-lg tracking-wide hover:text-blue-800'>
+                    <span className='cursor-pointer block pb-3 mb-1 text-light text-lg tracking-wide hover:text-red-600'>
                         {category.name} ({category.posts.length})
                     </span>
                 </Link>

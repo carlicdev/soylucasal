@@ -41,7 +41,7 @@ const BookBanner = ({book}) => {
                             }
                     </div>
                             :
-                            <div className='px-7 py-5 bg-blue-800 rounded-lg text-2xl text-white'>
+                            <div className='px-7 py-5 bg-red-500 rounded-lg text-2xl text-white'>
                             Próximamente
                             </div>
                         }

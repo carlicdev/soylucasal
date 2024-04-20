@@ -7,7 +7,7 @@ const CourseCard = ({course}) => {
   return (
 <div className='card max-w-sm rounded-lg flex flex-col justify-center'>
         <div className="w-full h-[250px] rounded-t-lg relative">
-            <div className='tag text-center absolute top-7 right-[-10px] bg-blue-800 w-[95px] px-2 py-1 shadow-md'>
+            <div className='tag text-center absolute top-7 right-[-10px] bg-red-600 w-[95px] px-2 py-1 shadow-md'>
                 <span className='text-xl text-white mx-auto font-bold text-lg text-special' >Curso</span>
             </div>
             <Image src={course.img} alt='profileImg' width={400} height={250} className="h-[250px]"/>

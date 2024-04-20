@@ -3,7 +3,7 @@
 import { redirect } from 'next/navigation'
 import { useState } from 'react'
 
-const Subscribe = () => {
+const Subscribe = ( ) => {
     const [email, setEmail] = useState('')
     const [error, setError] = useState(null)
     const [success, setSuccess] = useState(false)
@@ -49,8 +49,8 @@ const Subscribe = () => {
             />
             <button 
                 type='submit'
-                className='rounded-lg shadow-md shadow-slate- hover:bg-orange-700 w-full py-5 mt-4 mb-2 text-white bg-red-700 mx-auto text-2xl'>
-                {!success ? 'Suscribirme' : 'Te Has Unido a Las Cartas de Luca'}
+                className='rounded-lg shadow-md  hover:bg-red-700 w-full py-5 mt-4 mb-2 text-white bg-red-600 mx-auto text-2xl'>
+                {!success ? 'Acceder al 1%' : 'Te Has Unido a Las Cartas de Luca'}
             </button>
         </form>
         {error && (
