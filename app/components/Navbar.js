@@ -32,7 +32,7 @@ const Navbar = () => {
 
             <div className='mr-0 ml-auto flex gap-4 items-center'>
                 <Link href={'#contact'}>
-                    <button className='hidden lg:block px-7 py-3 bg-yellow-500 hover:bg-yellow-600 hover:scale-105 rounded-lg text-2xl text-black'>
+                    <button className='hidden lg:block px-7 py-3 bg-yellow-300 hover:bg-yellow-400 hover:scale-105 rounded-lg text-2xl text-black'>
                         Contacto
                     </button>
                 </Link>

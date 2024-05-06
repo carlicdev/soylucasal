@@ -3,6 +3,7 @@ import Link from "next/link";
 import SecondaryCard from "./SecondaryCard";
 import { getPosts } from "../services/graphql";
 import courses from "../utils/courses";
+import guides from "../utils/guides";
 
 const  Section = async () => {
     const posts = await getPosts();
@@ -24,8 +25,8 @@ const  Section = async () => {
         </div>
         <div className='w-full lg:w-1/2 flex flex-col gap-5 lg:pl-5 px-5 lg:pr-0'>
             {
-            courses.map((course) => (
-                <SecondaryCard course={course} key={course.id} />
+            guides.map((guide) => (
+                <SecondaryCard course={guide} key={guide.id} />
             ))
             }
         </div>
