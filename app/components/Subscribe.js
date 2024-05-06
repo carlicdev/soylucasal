@@ -45,12 +45,12 @@ const Subscribe = ( ) => {
                 name='email'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className='w-full text-lg text-gray-900 outline-none focus:outline-red-500 bg-gray-100 my-2 py-1 px-2 rounded '
+                className='w-full text-lg text-gray-900 outline-none focus:outline-yellow-500 bg-gray-100 my-2 py-1 px-2 rounded '
             />
             <button 
                 type='submit'
-                className='rounded-lg shadow-md  hover:bg-red-700 w-full py-5 mt-4 mb-2 text-white bg-red-600 mx-auto text-2xl'>
-                {!success ? 'Acceder al 1%' : 'Te Has Unido a Las Cartas de Luca'}
+                className='rounded-lg shadow-md bg-yellow-300 hover:bg-yellow-400 rounded-lg text-2xl text-black w-full py-5 mt-4 mb-2 mx-auto text-2xl'>
+                {!success ? 'Quiero Ser Un Ganador' : 'Te Has Unido a Las Cartas de Luca'}
             </button>
         </form>
         {error && (

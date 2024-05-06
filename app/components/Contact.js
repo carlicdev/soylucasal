@@ -84,24 +84,24 @@ const Contact = () => {
         <div className='lg:order-2 w-full lg:w-1/2 flex flex-col items-center gap-10 '>
           <Logo />
             <div className='flex flex-col justify-center items-center gap-10'>
-                <p className='font-black text-5xl text-center'>Tengamos una <span className='text-yellow-500'>conversación</span>.</p>
+                <p className='font-black text-5xl text-center'>Tengamos una <span className='text-yellow-300'>conversación</span>.</p>
                 <div className='felx flex-col  mx-auto'>
                     <div className='px-2 py-4 flex gap-2 items-center'>
-                    <span className='text-yellow-500 text-xl'><IoMdMail/></span>
+                    <span className='text-yellow-300 text-xl'><IoMdMail/></span>
                     <p className='text-xl'>lucasal.contacto@gmail.com</p>
                     </div>
                 </div>
             </div>
           <div className='mb-0 mt-auto flex gap-10 mx-auto'>
             <div>
-              <span className='text-yellow-500 hover:text-yellow-600 text-7xl'>
+              <span className='text-yellow-300 hover:text-yellow-600 text-7xl'>
                 <a href='https://twitter.com/LucaSalLuca'>
                     <BsTwitter />
                 </a>
               </span>
             </div>
             <div>
-              <span className='text-yellow-500 hover:text-yellow-600 text-7xl'>
+              <span className='text-yellow-300 hover:text-yellow-600 text-7xl'>
                 <BsYoutube />
               </span>
             </div>
@@ -110,37 +110,37 @@ const Contact = () => {
         <form 
             ref={formRef}
             onSubmit={handleSubmit}
-            className='lg:order-1 w-full lg:w-1/2 bg-gray-100 rounded-lg p-7 mt-5 lg:mt-0'
+            className='lg:order-1 w-full lg:w-1/2 bg-gray-900 rounded-lg p-7 mt-5 lg:mt-0'
         >
-          <p className='text-xl mb-5 text-gray-800'>Asunto:</p>
+          <p className='text-xl mb-5 text-gray-200'>Asunto:</p>
           <div className='flex flex-wrap gap-2 justify-start'>
             <div 
                 onClick={() => setSubject((prev) => prev === 'Dudas Y Aclaraciones' ? '' :'Dudas Y Aclaraciones')}
-                className={`${subject === 'Dudas Y Aclaraciones' ? 'bg-yellow-500 text-white' : 'text-yellow-500'} px-4 py-3 rounded-lg border-2 border-yellow-500 hover:bg-yellow-500 hover:text-white  cursor-pointer`}
+                className={`${subject === 'Dudas Y Aclaraciones' ? 'bg-yellow-300 text-black' : 'text-yellow-300'} px-4 py-3 rounded-lg border-2 border-yellow-300 hover:bg-yellow-300 hover:text-black  cursor-pointer`}
             >
               Dudas y Aclaraciones
             </div>
             <div 
                 onClick={() => setSubject((prev) => prev === 'Colaboraciones' ? '' :'Colaboraciones')}
-                className={`${subject === 'Colaboraciones' ? 'bg-yellow-500 text-white' : 'text-yellow-500'} px-4 py-3 rounded-lg border-2 border-yellow-500 hover:bg-yellow-500 hover:text-white  cursor-pointer`}
+                className={`${subject === 'Colaboraciones' ? 'bg-yellow-300 text-black' : 'text-yellow-300'} px-4 py-3 rounded-lg border-2 border-yellow-300 hover:bg-yellow-300 hover:text-black  cursor-pointer`}
             >
               Colaboraciones
             </div>
             <div 
                 onClick={() => setSubject((prev) => prev === 'Asesorías' ? '' :'Asesorías')}
-                className={`${subject === 'Asesorías' ? 'bg-yellow-500 text-white' : 'text-yellow-500'} px-4 py-3 rounded-lg border-2 border-yellow-500 hover:bg-yellow-500 hover:text-white  cursor-pointer`}
+                className={`${subject === 'Asesorías' ? 'bg-yellow-300 text-black' : 'text-yellow-300'} px-4 py-3 rounded-lg border-2 border-yellow-300 hover:bg-yellow-300 hover:text-black  cursor-pointer`}
             >
             Asesorías
             </div>
             <div 
                 onClick={() => setSubject((prev) => prev === 'Problemas con la Página' ? '' :'Problemas con la Página')}
-                className={`${subject === 'Problemas con la Página' ? 'bg-yellow-500 text-white' : 'text-yellow-500'} px-4 py-3 rounded-lg border-2 border-yellow-500 hover:bg-yellow-500 hover:text-white  cursor-pointer`}
+                className={`${subject === 'Problemas con la Página' ? 'bg-yellow-300 text-black' : 'text-yellow-300'} px-4 py-3 rounded-lg border-2 border-yellow-300 hover:bg-yellow-300 hover:text-black  cursor-pointer`}
             >
               Problemas con la Página
             </div>
             <div 
                 onClick={() => setSubject( (prev) => prev === 'Conversación Casual' ? '' : 'Conversación Casual')}
-                className={`${subject === 'Conversación Casual' ? 'bg-yellow-500 text-white' : 'text-yellow-500'} px-4 py-3 rounded-lg border-2 border-yellow-500 hover:bg-yellow-500 hover:text-white  cursor-pointer`}
+                className={`${subject === 'Conversación Casual' ? 'bg-yellow-300 text-black' : 'text-yellow-300'} px-4 py-3 rounded-lg border-2 border-yellow-300 hover:bg-yellow-300 hover:text-black  cursor-pointer`}
             >
               Conversación Casual
             </div>
@@ -148,39 +148,39 @@ const Contact = () => {
           </div>
           <div className='flex flex-col mt-5'>
             <label className='flex flex-col w-full mb-5'>
-              <span className=' mb-2 text-xl text-gray-800'>Nombre:</span>
+              <span className=' mb-2 text-xl text-gray-200'>Nombre:</span>
               <input 
                 type='text'
                 name='name'
                 value={form.name}
                 onChange={handleChange}
-                className='bg-white py-3 px-2 text-xl text-black rounded-lg outline-none border focus:outline-yellow-500'
+                className='bg-white py-3 px-2 text-xl text-black rounded-lg outline-none border focus:outline-yellow-300'
               />
             </label>
             <label className='flex flex-col w-full mb-5'>
-              <span className='mb-2 text-xl text-gray-800'>Email:</span>
+              <span className='mb-2 text-xl text-gray-200'>Email:</span>
               <input 
                 type='email'
                 name='email'
                 value={form.email}
                 onChange={handleChange}
-                className='bg-white py-3 px-2 text-xl text-black rounded-lg outline-none border focus:outline-yellow-500'
+                className='bg-white py-3 px-2 text-xl text-black rounded-lg outline-none border focus:outline-yellow-300'
               />
               <span className='mt-1'>{errorMessage}</span>
             </label>
             <label className='flex flex-col w-full mb-5'>
-              <span className='mb-2 text-xl text-gray-800'>Tu Mensaje:</span>
+              <span className='mb-2 text-xl text-gray-200'>Tu Mensaje:</span>
               <textarea 
                 name='message'
                 value={form.message}
                 onChange={handleChange}          
                 rows={3} 
-                className='bg-white py-3 px-2 text-xl text-black rounded-lg outline-none border focus:outline-yellow-500'
+                className='bg-white py-3 px-2 text-xl text-black rounded-lg outline-none border focus:outline-yellow-300'
               />
             </label>
             <div>
               <button 
-              className='flex gap-4  hover:bg-yellow-600 hover:scale-105 items-center px-7 py-5 rounded-lg bg-yellow-500 text-black text-2xl shadow'
+              className='flex gap-4  hover:bg-yellow-600 hover:scale-105 items-center px-7 py-5 rounded-lg bg-yellow-300 text-black text-2xl shadow'
               type='submit'
               disabled={!isValid}
               >
