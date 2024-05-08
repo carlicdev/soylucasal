@@ -21,6 +21,9 @@ const Navbar = () => {
                     <Link href={'/blog'}>
                         <p className='text-2xl tracking-wide'>Blog</p>
                     </Link>
+                    <Link href={'/guias'}>
+                        <p className='text-2xl tracking-wide'>Guías</p>
+                    </Link>
                     <Link href={'/cursos'}>
                         <p className='text-2xl tracking-wide'>Cursos</p>
                     </Link>

@@ -10,9 +10,9 @@ const CourseDetails = async ({params}) => {
   return (
     <main className='max-w-7xl mx-auto w-full pt-[110px]'>
         <p className='text-4xl font-bold tracking-wide mb-10'>{course.title}</p>
-        <p className='text-2xl'>Estamos trabajando en este curso...</p>
+        <p className='text-2xl'>Me encuentro trabajando en este curso...</p>
         <div className='card max-w-2xl p-5 mt-10'>
-            <p className='text-xl lg:text-2xl mb-5'>Entérate antes que nadie del lanzamiento de este curso registrándote a nuestro Boletín.</p>
+            <p className='text-xl lg:text-2xl mb-5'>Entérate antes que nadie del lanzamiento de este curso registrándote a mi <span className='font-bold'>Newsletter.</span></p>
             <Subscribe />
         </div>
         <Contact />

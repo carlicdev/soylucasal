@@ -26,7 +26,7 @@ const PostCard = ({post, index}) => {
             </div>
             <div className="flex flex-col p-5">
                 <Link href={`/post/${post.slug}`}>
-                    <p className='text-2xl text-special font-bold tracking-wide mb-3 cursor-pointer hover:text-red-600'>{post.title}</p>
+                    <p className='text-2xl text-special font-bold tracking-wide mb-3 cursor-pointer hover:text-red-600 capitalize'>{post.title}</p>
                 </Link>
                 <div className="flex gap-3 flex-wrap">
                     {

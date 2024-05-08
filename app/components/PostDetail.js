@@ -72,7 +72,7 @@ const PostDetail = ({post}) => {
     <div className='card  rounded-lg'>
         <img src={post.featuredImage.url} alt='postImg' className='w-full h-[400px] rounded-t-lg mb-4'/>
         <div className='p-4 rounded-lg'>
-            <h2 className='text-center text-4xl lg:text-5xl font-black mb-2 text-special'>{post.title}</h2>
+            <h2 className='text-center text-4xl lg:text-5xl font-black mb-2 text-special capitalize'>{post.title}</h2>
             <div className='flex max-w-2xl mx-auto w-full mb-5 px-5'>
                 <p className='ml-0 mr-auto'>{styleDate(post.createdAt)}</p>
                 <div className='flex gap-2 ml-auto mr-0'>

@@ -12,7 +12,7 @@ const LastPosts = ({posts}) => {
                 posts.map((post, index) => (
                     <div className='py-4 border-y border-gray-500' key={index}>
                         <Link href={`/post/${post.slug}`} className="hover:text-red-600">
-                            <p className='text-lg font-light tracking-wide'>{post.title}</p>
+                            <p className='text-lg font-light tracking-wide capitalize'>{post.title}</p>
                         </Link>
                         <p className='text-sm font-light text-gray-500'>{styleDate(post.createdAt)}</p>
                     </div>
