@@ -70,6 +70,9 @@ const Navbar = () => {
                             <Link href='/blog' onClick={() => setIsOpen(!isOpen)} >
                                 <p className='font-black text-3xl mb-5 mx-auto'>Blog</p>
                             </Link>
+                            <Link href='/guias' onClick={() => setIsOpen(!isOpen)}>
+                                <p className='font-black text-3xl mb-5 mx-auto'>Guías</p>
+                            </Link>
                             <Link href='/cursos' onClick={() => setIsOpen(!isOpen)}>
                                 <p className='font-black text-3xl mb-5 mx-auto'>Cursos</p>
                             </Link>
