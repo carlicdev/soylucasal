@@ -38,7 +38,7 @@ const Blog = async () => {
         }
         {/*<LastComments />  */}
         <div className='card p-3 rounded-lg'>
-            <p className='text-xl mb-2 text-justify'>Entérate de nuevos posts, cursos, productos y promociones.</p>
+            <p className='text-xl mb-2 text-justify'>Entérate de nuevos posts, guías, cursos, productos y promociones.</p>
             <Subscribe />
         </div>
         </div>
