@@ -50,7 +50,7 @@ const Subscribe = ( ) => {
             <button 
                 type='submit'
                 className='rounded-lg shadow-md bg-yellow-300 hover:bg-yellow-400 rounded-lg text-2xl text-black w-full py-5 mt-4 mb-2 mx-auto text-2xl'>
-                {!success ? 'Quiero Mi Libertad' : 'Te Has Unido A La Manada'}
+                {!success ? 'Quiero Mi Libertad' : 'Te Has Suscrito'}
             </button>
         </form>
         {error && (
